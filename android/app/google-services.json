@@ -8,9 +8,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:877308315690:android:4affb2cdd10111419f1b53",
+        "mobilesdk_app_id": "1:877308315690:android:2c7e1b9fa7c709f39f1b53",
         "android_client_info": {
           "package_name": "com.example.integration_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877308315690:android:4affb2cdd10111419f1b53",
+        "android_client_info": {
+          "package_name": "com.rex.app"
         }
       },
       "oauth_client": [],

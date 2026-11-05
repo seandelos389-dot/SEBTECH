@@ -41,37 +41,36 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8',
-    appId: '1:877308315690:android:4affb2cdd10111419f1b53',
+    apiKey: 'AIzaSyB8mcTVZGcO0OeMVoGMwPouyJFHH3aj3Mo',
+    appId: '1:877308315690:web:150fae04e601eaec9f1b53',
     messagingSenderId: '877308315690',
     projectId: 'product-system-app-8a06e',
     authDomain: 'product-system-app-8a06e.firebaseapp.com',
     databaseURL: 'https://product-system-app-8a06e-default-rtdb.firebaseio.com',
     storageBucket: 'product-system-app-8a06e.firebasestorage.app',
+    measurementId: 'G-1F28HY022D',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8',
-    appId: '1:877308315690:android:4affb2cdd10111419f1b53',
+    appId: '1:877308315690:android:2c7e1b9fa7c709f39f1b53',
     messagingSenderId: '877308315690',
     projectId: 'product-system-app-8a06e',
     databaseURL: 'https://product-system-app-8a06e-default-rtdb.firebaseio.com',
     storageBucket: 'product-system-app-8a06e.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8',
-    appId: '1:877308315690:android:4affb2cdd10111419f1b53',
+    apiKey: 'AIzaSyB4gxCsgzjR-KtHlck-vcxeEc5IZxkMfzw',
+    appId: '1:877308315690:ios:0ae7627f8550668e9f1b53',
     messagingSenderId: '877308315690',
     projectId: 'product-system-app-8a06e',
     databaseURL: 'https://product-system-app-8a06e-default-rtdb.firebaseio.com',
     storageBucket: 'product-system-app-8a06e.firebasestorage.app',
     iosBundleId: 'com.example.integrationMobile',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8',
-    appId: '1:877308315690:android:4affb2cdd10111419f1b53',
+    apiKey: 'AIzaSyB4gxCsgzjR-KtHlck-vcxeEc5IZxkMfzw',
+    appId: '1:877308315690:ios:0ae7627f8550668e9f1b53',
     messagingSenderId: '877308315690',
     projectId: 'product-system-app-8a06e',
     databaseURL: 'https://product-system-app-8a06e-default-rtdb.firebaseio.com',
@@ -80,12 +79,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBsjTApqhdLsupQ2OA3lzO8zNXEMrMMch8',
-    appId: '1:877308315690:android:4affb2cdd10111419f1b53',
+    apiKey: 'AIzaSyB8mcTVZGcO0OeMVoGMwPouyJFHH3aj3Mo',
+    appId: '1:877308315690:web:16b1797d43434cef9f1b53',
     messagingSenderId: '877308315690',
     projectId: 'product-system-app-8a06e',
     authDomain: 'product-system-app-8a06e.firebaseapp.com',
     databaseURL: 'https://product-system-app-8a06e-default-rtdb.firebaseio.com',
     storageBucket: 'product-system-app-8a06e.firebasestorage.app',
+    measurementId: 'G-CD3H49TC9L',
   );
 }
