@@ -1,0 +1,71 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "products": {
+      ".read": "auth != null",
+      ".write": "auth != null && auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2'",
+      "$productId": {
+        ".validate": "newData.hasChildren(['name', 'category', 'price', 'stock'])",
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0"
+        },
+        "category": {
+          ".validate": "newData.isString() && newData.val().length > 0"
+        },
+        "price": {
+          ".validate": "newData.isNumber() && newData.val() > 0"
+        },
+        "stock": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "image": {
+          ".validate": "newData.isString() && newData.val().length <= 400000"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber()"
+        },
+        "updatedAt": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+    "profiles": {
+      ".read": "auth != null && auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2'",
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2')",
+        ".write": "auth != null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['username', 'email', 'createdAt'])",
+        "username": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 50"
+        },
+        "email": {
+          ".validate": "newData.isString() && newData.val().length > 3"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+    "cart": {
+      ".read": "auth != null && auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2'",
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2')",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "transactions": {
+      ".read": "auth != null && auth.uid === 'EdRvCCTOEoXLEvWNikiUn1vgKhN2'",
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    }
+  }
+}
